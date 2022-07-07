@@ -37,10 +37,6 @@ body {
     align-items: center;
 }
 
-#user-content{
-    //padding: 4rem;
-}
-
 .profile{
     color: var(--title-color);
     display: flex;
@@ -61,10 +57,7 @@ p{
 
 .profile-links{
     display: flex;
-    //flex-direction: column;
     justify-content: center;
-    //align-items: center;
-    //gap: 3rem;
 }
 
 .img-profile {
@@ -84,13 +77,8 @@ a {
     font-size: 1.5rem;
     padding: 1rem 7rem;
     display: flex;
-    //justify-content: center;
     align-items: center;
     gap: 1rem;
-}
-
-.icon{
-    //margin-right: 1rem;
 }
 
 footer{
