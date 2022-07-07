@@ -8,10 +8,10 @@
 
 :root {
     --background1: #2F0A28;
-    --background2: #000000;
+    --background2: #ffffff;
 
     --paragraph-color: #62466B;
-    --title-color: #ffffff;
+    --title-color: #2D2327;
   
     --button-color: #45364B;
     --button-hover-color: #2D2327;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, var(--background1), var(--background2));
+    background: linear-gradient(to bottom, var(--background1), var(--background2));
   
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -37,13 +37,64 @@ body {
     align-items: center;
 }
 
-a {
-    color: var(--paragraph-color);
+#user-content{
+    //padding: 4rem;
+}
+
+.profile{
+    color: var(--title-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.profile-links{
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+    //gap: 3rem;
 }
 
 .img-profile {
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
+}
+
+li{
+    border: solid 1px var(--button-color);
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+a {
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+    padding: 1rem 7rem;
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon{
+    //margin-right: 1rem;
+}
+
+footer{
+    color: var(--title-color);
+    margin-top: 1rem;
 }
 
