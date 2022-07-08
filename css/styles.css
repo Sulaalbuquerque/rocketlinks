@@ -14,7 +14,8 @@
     --title-color: #2D2327;
   
     --button-color: #45364B;
-    --button-hover-color: #2D2327;
+    --button-hover-color: #ffffff;
+    --button-hover-background-color: #2D2327;
   
     font-size: 62.5%;
 }
@@ -23,13 +24,11 @@ body,
 html {
     width: 100vw;
     height: 100vh;
-  
     overflow: auto;
 }
 
 body {
     background: linear-gradient(to bottom, var(--background1), var(--background2));
-  
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
@@ -66,12 +65,6 @@ p{
     border-radius: 50%;
 }
 
-li{
-    border: solid 1px var(--button-color);
-    margin: 1rem;
-    border-radius: 1rem;
-}
-
 a {
     color: var(--paragraph-color);
     font-size: 1.5rem;
@@ -79,10 +72,32 @@ a {
     display: flex;
     align-items: center;
     gap: 1rem;
+    border: solid 1px var(--button-color);
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+a:hover{
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-color);
 }
 
 footer{
     color: var(--title-color);
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
+@media (max-width: 771px) {
+    a{
+        font-size: 2rem;
+        padding: 1.5rem 7rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+}  
